@@ -1,0 +1,40 @@
+numpy: available
+pandas: available
+matplotlib: missing
+pytest: missing
+openpyxl: available
+Synthetic Base Case: 340 months, pool loss 0.3430%, mezz loss 0.0000%
+Cash flow conservation tests passed successfully.
+  Pool balance accounted: $6,362,267,183.11 / $6,362,267,183.11 (diff $0.0000)
+  Mezz balance accounted: $190,868,015.49 / $190,868,015.49 (diff $0.0000)
+test_cashflow_conservation.py: exit 0
+Independent UPB $6,362,267,183.11; WAC 6.2033022164%; annual CDR 0.5583257649%.
+Independent Base Case: WAL 5.0174663830; par PV $190,868,015.493301; duration 3.6308048555; convexity 26.9525844494.
+Independent Rates Up 100bp: WAL 5.2024869225; par PV $190,868,015.493300; duration 3.5969864162; convexity 26.3501251488.
+Independent Rates Down 100bp: WAL 4.8440279201; par PV $190,868,015.493299; duration 3.6661688126; convexity 27.5896089993.
+Independent Home Price Down 10pct: WAL 4.9606676940; par PV $190,868,015.493301; duration 3.5980735236; convexity 26.5249670794.
+Ranges, 4 scenarios, 16 prices, and 30 grid cells passed.
+test_independent_numbers.py: exit 0
+Synthetic Base Case: 340 months, pool loss 0.3430%, mezz loss 0.0000%
+Synthetic Rates Up 100bp: 340 months, pool loss 0.3858%, mezz loss 0.0000%
+Synthetic Rates Down 100bp: 340 months, pool loss 0.3019%, mezz loss 0.0000%
+Synthetic Home Price Down 10pct: 340 months, pool loss 0.8764%, mezz loss 0.0000%
+Synthetic Home Price Down 10pct: 340 months, pool loss 7.8415%, mezz loss 77.6601%
+Five scenario conservation checks passed; largest lifetime error $0.000005722.
+Synthetic Base Case: 340 months, pool loss 0.3430%, mezz loss 0.0000%
+Reproducibility, live burnout, LTV severity, and CDR cap passed.
+Synthetic Base Case: 340 months, pool loss 0.0000%, mezz loss 0.0000%
+Zero-coupon amortization and invalid yield rejection passed.
+test_model_regressions.py: exit 0
+Synthetic Base Case: 340 months, pool loss 0.3430%, mezz loss 0.0000%
+Price yield monotonicity and duration tests passed successfully.
+  Duration: 3.63 years, Convexity: 26.95
+  Weighted Average Life: 5.02 years
+test_price_yield_monotonicity.py: exit 0
+Synthetic Home Price Down 10pct: 340 months, pool loss 5.2327%, mezz loss 75.5547%
+Tranche loss boundary tests passed successfully.
+  Initial tranche size: $190,868,015.49
+  Stress write-down: $144,209,761.66 (75.55%)
+  Minimum tranche balance: $0.00
+  Subordination threshold protected: $63,622,671.83
+test_tranche_loss_bounds.py: exit 0

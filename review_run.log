@@ -1,0 +1,89 @@
+SYNTHETIC CRT-style valuation. No real loan or market data.
+Saved 20000 synthetic loans to: D:\Code\Resume\Portfolio_Projects\Agency_CRT_Valuation\data\synthetic_loans.csv
+Pool UPB $6,362,267,183.11; WAC 6.203302%
+Assumed weighted annual CDR 0.558326%
+Synthetic Base Case: 340 months, pool loss 0.3430%, mezz loss 0.0000%
+Synthetic Rates Up 100bp: 340 months, pool loss 0.3858%, mezz loss 0.0000%
+Synthetic Rates Down 100bp: 340 months, pool loss 0.3019%, mezz loss 0.0000%
+Synthetic Home Price Down 10pct: 340 months, pool loss 0.8764%, mezz loss 0.0000%
+Scenario valuation table written to: D:\Code\Resume\Portfolio_Projects\Agency_CRT_Valuation\outputs\scenario_results.csv
+             scenario  benchmark_rate  mortgage_rate  par_yield  par_spread_bps  wal_years  modified_duration  convexity  pool_cum_loss_pct  mezz_cum_loss_pct  mezz_principal_paid  mezz_writedown  discount_yield  model_price_pct
+            Base Case            0.05         0.0625      0.075           250.0   5.017466           3.631114  26.954767           0.342972                0.0         1.908680e+08             0.0           0.075            100.0
+       Rates Up 100bp            0.06         0.0725      0.085           250.0   5.202487           3.597285  26.352205           0.385803                0.0         1.908680e+08             0.0           0.085            100.0
+     Rates Down 100bp            0.04         0.0525      0.065           250.0   4.844028           3.666490  27.591902           0.301941                0.0         1.908680e+08             0.0           0.065            100.0
+Home Price Down 10pct            0.05         0.0625      0.075           250.0   4.960668           3.598377  26.527099           0.876420                0.0         1.908680e+08             0.0           0.075            100.0
+Price yield table written to: D:\Code\Resume\Portfolio_Projects\Agency_CRT_Valuation\outputs\price_yield_table.csv
+Synthetic Base Case: 340 months, pool loss 0.2262%, mezz loss 0.0000%
+Synthetic Base Case: 340 months, pool loss 0.4495%, mezz loss 0.0000%
+Synthetic Base Case: 340 months, pool loss 0.6700%, mezz loss 0.0000%
+Synthetic Base Case: 340 months, pool loss 0.8877%, mezz loss 0.0000%
+Synthetic Base Case: 340 months, pool loss 1.3150%, mezz loss 10.4986%
+Synthetic Base Case: 340 months, pool loss 0.1965%, mezz loss 0.0000%
+Synthetic Base Case: 340 months, pool loss 0.3907%, mezz loss 0.0000%
+Synthetic Base Case: 340 months, pool loss 0.5826%, mezz loss 0.0000%
+Synthetic Base Case: 340 months, pool loss 0.7723%, mezz loss 0.0000%
+Synthetic Base Case: 340 months, pool loss 1.1450%, mezz loss 4.8329%
+Synthetic Base Case: 340 months, pool loss 0.1724%, mezz loss 0.0000%
+Synthetic Base Case: 340 months, pool loss 0.3430%, mezz loss 0.0000%
+Synthetic Base Case: 340 months, pool loss 0.5117%, mezz loss 0.0000%
+Synthetic Base Case: 340 months, pool loss 0.6785%, mezz loss 0.0000%
+Synthetic Base Case: 340 months, pool loss 1.0068%, mezz loss 0.2255%
+Synthetic Base Case: 340 months, pool loss 0.1525%, mezz loss 0.0000%
+Synthetic Base Case: 340 months, pool loss 0.3034%, mezz loss 0.0000%
+Synthetic Base Case: 340 months, pool loss 0.4527%, mezz loss 0.0000%
+Synthetic Base Case: 340 months, pool loss 0.6006%, mezz loss 0.0000%
+Synthetic Base Case: 340 months, pool loss 0.8918%, mezz loss 0.0000%
+Synthetic Base Case: 340 months, pool loss 0.1356%, mezz loss 0.0000%
+Synthetic Base Case: 340 months, pool loss 0.2700%, mezz loss 0.0000%
+Synthetic Base Case: 340 months, pool loss 0.4030%, mezz loss 0.0000%
+Synthetic Base Case: 340 months, pool loss 0.5348%, mezz loss 0.0000%
+Synthetic Base Case: 340 months, pool loss 0.7947%, mezz loss 0.0000%
+Synthetic Base Case: 340 months, pool loss 0.1088%, mezz loss 0.0000%
+Synthetic Base Case: 340 months, pool loss 0.2167%, mezz loss 0.0000%
+Synthetic Base Case: 340 months, pool loss 0.3238%, mezz loss 0.0000%
+Synthetic Base Case: 340 months, pool loss 0.4300%, mezz loss 0.0000%
+Synthetic Base Case: 340 months, pool loss 0.6398%, mezz loss 0.0000%
+Sensitivity grid written to: D:\Code\Resume\Portfolio_Projects\Agency_CRT_Valuation\outputs\sensitivity_grid.csv
+Optional matplotlib missing: chart skipped; no packages installed.
+Synthetic valuation memo written to: D:\Code\Resume\Portfolio_Projects\Agency_CRT_Valuation\outputs\valuation_memo.md
+Running test_cashflow_conservation.py:test_cashflow_conservation
+Synthetic Base Case: 340 months, pool loss 0.3430%, mezz loss 0.0000%
+Cash flow conservation tests passed successfully.
+  Pool balance accounted: $6,362,267,183.11 / $6,362,267,183.11 (diff $0.0000)
+  Mezz balance accounted: $190,868,015.49 / $190,868,015.49 (diff $0.0000)
+Running test_independent_numbers.py:test_exported_tables_and_ranges
+Ranges, 4 scenarios, 16 prices, and 30 grid cells passed.
+Running test_independent_numbers.py:test_independent_collateral_numbers
+Independent UPB $6,362,267,183.11; WAC 6.2033022164%; annual CDR 0.5583257649%.
+Running test_independent_numbers.py:test_independent_exported_valuation
+Independent Base Case: WAL 5.0174663830; par PV $190,868,015.493301; duration 3.6308048555; convexity 26.9525844494.
+Independent Rates Up 100bp: WAL 5.2024869225; par PV $190,868,015.493300; duration 3.5969864162; convexity 26.3501251488.
+Independent Rates Down 100bp: WAL 4.8440279201; par PV $190,868,015.493299; duration 3.6661688126; convexity 27.5896089993.
+Independent Home Price Down 10pct: WAL 4.9606676940; par PV $190,868,015.493301; duration 3.5980735236; convexity 26.5249670794.
+Running test_model_regressions.py:test_burnout_severity_and_reproducibility
+Synthetic Base Case: 340 months, pool loss 0.3430%, mezz loss 0.0000%
+Reproducibility, live burnout, LTV severity, and CDR cap passed.
+Running test_model_regressions.py:test_monthly_conservation_all_scenarios
+Synthetic Base Case: 340 months, pool loss 0.3430%, mezz loss 0.0000%
+Synthetic Rates Up 100bp: 340 months, pool loss 0.3858%, mezz loss 0.0000%
+Synthetic Rates Down 100bp: 340 months, pool loss 0.3019%, mezz loss 0.0000%
+Synthetic Home Price Down 10pct: 340 months, pool loss 0.8764%, mezz loss 0.0000%
+Synthetic Home Price Down 10pct: 340 months, pool loss 7.8415%, mezz loss 77.6601%
+Five scenario conservation checks passed; largest lifetime error $0.000005722.
+Running test_model_regressions.py:test_zero_rates_and_solver_rejection
+Synthetic Base Case: 340 months, pool loss 0.0000%, mezz loss 0.0000%
+Zero-coupon amortization and invalid yield rejection passed.
+Running test_price_yield_monotonicity.py:test_price_yield_monotonicity
+Synthetic Base Case: 340 months, pool loss 0.3430%, mezz loss 0.0000%
+Price yield monotonicity and duration tests passed successfully.
+  Duration: 3.63 years, Convexity: 26.95
+  Weighted Average Life: 5.02 years
+Running test_tranche_loss_bounds.py:test_tranche_loss_bounds
+Synthetic Home Price Down 10pct: 340 months, pool loss 5.2327%, mezz loss 75.5547%
+Tranche loss boundary tests passed successfully.
+  Initial tranche size: $190,868,015.49
+  Stress write-down: $144,209,761.66 (75.55%)
+  Minimum tranche balance: $0.00
+  Subordination threshold protected: $63,622,671.83
+Passed 9 tests.
+Synthetic outputs regenerated; all discovered tests passed.
